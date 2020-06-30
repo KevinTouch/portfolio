@@ -1,1 +1,1 @@
-Check out website at https://kevintouch.github.io/myPortfolio/. # portfolio
+Check out website at https://kevintouch.github.io/portfolio/.
