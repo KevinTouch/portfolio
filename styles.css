@@ -1,0 +1,54 @@
+/* #1ECBE1 */
+/* #e9ecef */
+
+.jumbotron {
+  margin-bottom: 0rem;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-family: 'Galada', cursive;
+}
+
+.body-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.0rem;
+}
+
+
+.card-img-top {
+  height: 15vw;
+  object-fit: cover;
+}
+
+#profile-pic {
+  width: 10rem;
+  height: 10rem;
+}
+
+#skillset {
+  background: #e9ecef;
+  height: 400px;
+}
+
+#hr-jumbotron {
+  border: 0;
+  height: 1px;
+  background: #333;
+  max-width: 30%;
+}
+
+
+#example1 {
+/*  background: url(imgs/background.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
