@@ -1,8 +1,44 @@
-/* #1ECBE1 */
-/* #e9ecef */
+/*************************************/
+
+/* Boostrap Changes (Overrides)*/
+.card {
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.card-body {
+  min-height: 140px;
+}
 
 .jumbotron {
   margin-bottom: 0rem;
+}
+
+.card-img-top {
+  height: 15vw;
+  object-fit: cover;
+}
+
+.modal-lg, .modal-xl {
+  max-width: 1000px;
+}
+
+.footer-p {
+  color: white;
+}
+
+/*************************************/
+
+/* Personal Changes */ 
+.subheadingProject {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.textboxProject {
+  white-space: pre-line;
+  overflow-y: scroll;
+  height: 22rem;
+  text-align: left;
 }
 
 .vertical-center {
@@ -22,21 +58,11 @@
   font-size: 2.0rem;
 }
 
-
-.card-img-top {
-  height: 15vw;
-  object-fit: cover;
+.img-project-about {
+  max-width: 100%;
+  height: auto;
 }
 
-#profile-pic {
-  width: 10rem;
-  height: 10rem;
-}
-
-#skillset {
-  background: #e9ecef;
-  height: 400px;
-}
 
 #hr-jumbotron {
   border: 0;
@@ -45,10 +71,7 @@
   max-width: 30%;
 }
 
-
-#example1 {
-/*  background: url(imgs/background.jpg);*/
-  background-repeat: no-repeat;
-  background-size: cover;
+/* LESS */
+.card-body, .card-title {
+  text-align: center;
 }
-

@@ -54,9 +54,10 @@
   <!-- JumboTron -->
   <section id="jumbotron">
     <div class="jumbotron vertical-center" id="jumbotron-overwrite"> 
-      <div class="container py-5 text-center">
+      <div class="container py-5">
         <h1 class="mb-3">Recent Projects</h1>
-        <p class="mb-5">See my past projects! Want to see more? Email me.</p> 
+        <hr style="margin-top: 0rem">
+        <p class="mb-5 subheadingProject">See my past projects! Want to see more? Email me.</p>
         <!-- FIRST ROW -->
         <div class="row">
           <div class="col-6 col-md-4">
@@ -64,9 +65,43 @@
               <img src="imgs/yelp_camp.png" class="card-img-top" alt="yelp camp">
               <div class="card-body">
                 <h5 class="card-title">Yelp Camp</h5>
-                <p class="card-text"></p>
-                <a href="https://yelpcamp-kevintouch.herokuapp.com" class="btn btn-primary" target="_blank">Demo</a>
-                <a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank">Code</a>
+                <p class="card-text mt-3">
+                  <a href="https://yelpcamp-kevintouch.herokuapp.com" class="btn btn-primary" target="_blank">Demo</a>
+                  <a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank">Code</a>
+          				<a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank" data-toggle="modal" data-target="#exampleModalCenter">About</a>
+				        </p>
+        				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        				  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        					<div class="modal-content">
+        					  <div class="modal-header">
+        						<h5 class="modal-title" id="exampleModalLongTitle">YelpCamp</h5>
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        						  <span aria-hidden="true">&times;</span>
+        						</button>
+        					  </div>
+        					  <div class="modal-body">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <img class="img-thumbnail" src="imgs/yelp_camp.png" alt="yelp camp">
+                          </div>
+                          
+                          <div class="col-md-4 textboxProject">
+                            About: YelpCamp is a website which allows users to sign up and be able to post pictures of campsites, that they have been before. Futhermore, users will be able to post, edit, and delete comments on these campsites forums.
+                            
+                            What I learned: From my experience, this project taught me RESTFUL api behavior (e.g. request/response) and the different HTTP request methods (POST, GET, UPDATE, DELETE, etc) when it came to creating api endpoints. In terms of skillset, I was able to familiarize myself with using node js, express, passport and other npm libaries that I have not used in the past. Lastly, I learned about using mongodb (which was my first non-relational db) in conjunction with express to implement data persistence in web.
+                          </div>
+                        </div>
+
+                      </div>
+        					  </div>
+        					  <div class="modal-footer">
+          						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        					  </div>
+        					</div>
+        				  </div>
+        				</div>
+				<p></p>
               </div>
             </div>
           </div>
@@ -99,10 +134,8 @@
         <!-- END OF FIRST ROW -->
 
         <!-- SECOND ROW -->
-         <div class="row mt-3">
-
+         <div class="row mt-5">
           <div class="col-6 col-md-4">
-
             <div class="card">
               <img src="imgs/museum_of_candy.png" class="card-img-top" alt="museum of candy">
               <div class="card-body">
@@ -112,31 +145,32 @@
                 <a href="https://github.com/KevinTouch/museum_of_candy" class="btn btn-primary" target="_blank">Code</a>
               </div>
             </div>
-
           </div>
 
           <!-- Extra Cards (UNUSED) -->
-          <!-- <div class="col-6 col-md-4">
+           <div class="col-6 col-md-4">
             <div class="card">
-              <img src="imgs/minesweeper.jpg" class="card-img-top" alt="...">
+              <img src="imgs/coming_soon.jpg" class="card-img-top" alt="Quote Machine">
               <div class="card-body">
-                <h5 class="card-title">Minesweeper</h5>
-                  <small><em>Ask for Github Link since it's private</em></small>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Quote Machine</h5>
+                <p class="card-text"></p>
+                <a href="" class="btn btn-primary disabled" target="_blank" disabled>Demo</a>
+                <a href="" class="btn btn-primary disabled" target="_blank" disabled>Code</a>
               </div>
             </div>
           </div>
-
+          
           <div class="col-6 col-md-4">
             <div class="card">
-              <img src="imgs/malloc.jpg" class="card-img-top" alt="...">
+              <img src="imgs/coming_soon.jpg" class="card-img-top" alt="Warbler">
               <div class="card-body">
-                <h5 class="card-title">Malloc, realloc, free</h5>
-                <small><em>Ask for Github Link since it's private</em></small>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Warbler</h5>
+                <p class="card-text"></p>
+                <a href="" class="btn btn-primary disabled" target="_blank" disabled>Demo</a>
+                <a href="" class="btn btn-primary disabled" target="_blank" disabled>Code</a>
               </div>
             </div>
-          </div> -->
+          </div> 
 
 
         </div>
