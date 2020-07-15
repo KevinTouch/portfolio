@@ -22,29 +22,38 @@
 
 
 <body class="d-flex flex-column h-100">
+
   <!-- navbar section -->
   <section id="nav">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
        <a class="navbar-brand name" href="index.html" style="font-size:1.5rem">Kevin Touch</a>
-      
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto ml">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="https://www.linkedin.com/in/kevin-touch/"><i class="fab fa-linkedin navbar-icon data-trigger"></i></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/KevinTouch"><i class="fab fa-github navbar-icon"></i></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="mailto:ktouch@uci.edu"><i class="far fa-envelope navbar-icon"></i></a>  
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="https://drive.google.com/file/d/1hxYCy7Ffw9-BJ9uRexq_yRXIHu0sK4Y_/view?usp=sharing" target="_blank"><i class="fas fa-id-card navbar-icon"></i></i></a> 
+            </li>
+
           </ul>
         </div>
 
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="https://www.linkedin.com/in/kevin-touch/"><i class="fab fa-linkedin mr-3"></i></a>
-            <a href="https://github.com/KevinTouch"><i class="fab fa-github mr-3"></i></a>
-            <a href="mailto:ktouch@uci.edu"><i class="far fa-envelope mr-3"></i></a>        
-            <a href="https://drive.google.com/file/d/1hxYCy7Ffw9-BJ9uRexq_yRXIHu0sK4Y_/view?usp=sharing" target="_blank"><i class="fas fa-id-card mr-3"></i></i></a>
-          </li>
-        </ul>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
   </section>
@@ -54,59 +63,37 @@
   <!-- JumboTron -->
   <section id="jumbotron">
     <div class="jumbotron vertical-center" id="jumbotron-overwrite"> 
-      <div class="container py-5">
+      <div class="container pb-5">
         <h1 class="mb-3">Recent Projects</h1>
         <hr style="margin-top: 0rem">
         <p class="mb-5 subheadingProject">See my past projects! Want to see more? Email me.</p>
-        <!-- FIRST ROW -->
+        
         <div class="row">
-          <div class="col-6 col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <img src="imgs/yelp_camp.png" class="card-img-top" alt="yelp camp">
               <div class="card-body">
                 <h5 class="card-title">Yelp Camp</h5>
+                <!-- <div>
+                  <span class="tags">HTML & CSS</span>
+                  <span class="tags">JavaScript</span>
+                  <span class="tags">MongoDB</span>
+                  <span class="tags">Express</span>
+                  <span class="tags">NodeJs</span>
+                  <span class="tags">NodeJs</span>
+                  <span class="tags">NodeJs</span>
+                </div> -->
                 <p class="card-text mt-3">
                   <a href="https://yelpcamp-kevintouch.herokuapp.com" class="btn btn-primary" target="_blank">Demo</a>
                   <a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank">Code</a>
-          				<a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank" data-toggle="modal" data-target="#exampleModalCenter">About</a>
+          				<a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank" data-toggle="modal" data-target="#yelpcampModal">About</a>
 				        </p>
-        				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        				  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        					<div class="modal-content">
-        					  <div class="modal-header">
-        						<h5 class="modal-title" id="exampleModalLongTitle">YelpCamp</h5>
-        						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        						  <span aria-hidden="true">&times;</span>
-        						</button>
-        					  </div>
-        					  <div class="modal-body">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-8">
-                            <img class="img-thumbnail" src="imgs/yelp_camp.png" alt="yelp camp">
-                          </div>
-                          
-                          <div class="col-md-4 textboxProject">
-                            About: YelpCamp is a website which allows users to sign up and be able to post pictures of campsites, that they have been before. Futhermore, users will be able to post, edit, and delete comments on these campsites forums.
-                            
-                            What I learned: From my experience, this project taught me RESTFUL api behavior (e.g. request/response) and the different HTTP request methods (POST, GET, UPDATE, DELETE, etc) when it came to creating api endpoints. In terms of skillset, I was able to familiarize myself with using node js, express, passport and other npm libaries that I have not used in the past. Lastly, I learned about using mongodb (which was my first non-relational db) in conjunction with express to implement data persistence in web.
-                          </div>
-                        </div>
-
-                      </div>
-        					  </div>
-        					  <div class="modal-footer">
-          						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        					  </div>
-        					</div>
-        				  </div>
-        				</div>
-				<p></p>
+        				
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <img src="imgs/todolist.png" class="card-img-top" alt="todo_list camp">
               <div class="card-body">
@@ -114,12 +101,12 @@
                 <p class="card-text"></p>
                 <a href="https://todolist-kevintouch.herokuapp.com" class="btn btn-primary" target="_blank">Demo</a>
                 <a href="https://github.com/KevinTouch/todolist" class="btn btn-primary" target="_blank">Code</a>
+                <a href="https://github.com/KevinTouch/yelpcamp" class="btn btn-primary" target="_blank" data-toggle="modal" data-target="#todolistModal">About</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4">
-            
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <img src="imgs/fab_flix.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -128,14 +115,9 @@
                 <a href="fabflix.mkv" class="btn btn-primary">Demo</a>
               </div>
             </div>
-
           </div>
-        </div>
-        <!-- END OF FIRST ROW -->
 
-        <!-- SECOND ROW -->
-         <div class="row mt-5">
-          <div class="col-6 col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <img src="imgs/museum_of_candy.png" class="card-img-top" alt="museum of candy">
               <div class="card-body">
@@ -147,20 +129,19 @@
             </div>
           </div>
 
-          <!-- Extra Cards (UNUSED) -->
-           <div class="col-6 col-md-4">
+           <div class="col-lg-4 col-md-6">
             <div class="card">
               <img src="imgs/coming_soon.jpg" class="card-img-top" alt="Quote Machine">
               <div class="card-body">
                 <h5 class="card-title">Quote Machine</h5>
                 <p class="card-text"></p>
-                <a href="" class="btn btn-primary disabled" target="_blank" disabled>Demo</a>
-                <a href="" class="btn btn-primary disabled" target="_blank" disabled>Code</a>
+                <a href="https://kevintouch.github.io/quoteMachine" class="btn btn-primary" target="_blank">Demo</a>
+                <a href="https://github.com/KevinTouch/quoteMachine" class="btn btn-primary" target="_blank">Code</a>
               </div>
             </div>
           </div>
           
-          <div class="col-6 col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <img src="imgs/coming_soon.jpg" class="card-img-top" alt="Warbler">
               <div class="card-body">
@@ -171,17 +152,13 @@
               </div>
             </div>
           </div> 
-
-
         </div>
-        <!-- END OF SECOND ROW -->
-      
       </div>
     </div>
   </section>
 
 
-  <!-- Footer -->
+<!-- Footer -->
 <footer class="footer mt-auto py-3 bg-dark">
  <div class="container-fluid">
     <div class="row text-center">
@@ -198,6 +175,69 @@
   </div>
 </footer>
 
+
+<!-- About Section  -->
+<!-- yelpcamp modal -->
+<div class="modal fade" id="yelpcampModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">YelpCamp</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <img class="img-thumbnail" src="imgs/yelp_camp.png" alt="yelp camp">
+            </div>
+            <div class="col-md-4 textboxProject">
+              About: YelpCamp is a website which allows users to sign up and be able to post pictures of campsites, that they have been before. Futhermore, users will be able to post, edit, and delete comments on these campsites forums.
+              
+              What I learned: From my experience, this project taught me RESTFUL api behavior (e.g. request/response) and the different HTTP request methods (POST, GET, UPDATE, DELETE, etc) when it came to creating api endpoints. In terms of skillset, I was able to familiarize myself with using node js, express, passport and other npm libaries that I have not used in the past. Lastly, I learned about using mongodb (which was my first non-relational db) in conjunction with express to implement data persistence in web.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- todolist -->
+<div class="modal fade" id="todolistModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">YelpCamp</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <img class="img-thumbnail" src="imgs/todolist.png" alt="yelp camp">
+            </div>
+            <div class="col-md-4 textboxProject">
+              About: 
+              
+              What I learned: 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

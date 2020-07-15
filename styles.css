@@ -3,6 +3,8 @@
 /* Boostrap Changes (Overrides)*/
 .card {
   box-shadow: 10px 10px 8px #888888;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 2em;
 }
 
 .card-body {
@@ -14,8 +16,8 @@
 }
 
 .card-img-top {
-  height: 15vw;
   object-fit: cover;
+  height: 30vh;
 }
 
 .modal-lg, .modal-xl {
@@ -28,7 +30,7 @@
 
 /*************************************/
 
-/* Personal Changes */ 
+/* Personal Changes - Classes*/ 
 .subheadingProject {
   font-weight: 300;
   font-size: 22px;
@@ -63,15 +65,26 @@
   height: auto;
 }
 
+.card-body, .card-title {
+  text-align: center;
+}
 
+.navbar-icon {
+  margin: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.tags {
+  border: 1px solid #0000004f;
+  color: #3e04a7d4;
+  padding: 0.3em;
+  margin: 1.3em;
+}
+
+/* Personal Changes - Ids*/ 
 #hr-jumbotron {
   border: 0;
   height: 1px;
   background: #333;
   max-width: 30%;
-}
-
-/* LESS */
-.card-body, .card-title {
-  text-align: center;
 }
