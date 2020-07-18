@@ -17,7 +17,7 @@
 
 .card-img-top {
   object-fit: cover;
-  height: 30vh;
+  height: 13rem;
 }
 
 .modal-lg, .modal-xl {
@@ -37,7 +37,7 @@
 }
 
 .textboxProject {
-  white-space: pre-line;
+  /*white-space: pre-line;*/
   overflow-y: scroll;
   height: 22rem;
   text-align: left;
@@ -77,8 +77,15 @@
 .tags {
   border: 1px solid #0000004f;
   color: #3e04a7d4;
-  padding: 0.3em;
-  margin: 1.3em;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: lighter;
+}
+
+.tag-div {
+  white-space: initial;
 }
 
 /* Personal Changes - Ids*/ 
